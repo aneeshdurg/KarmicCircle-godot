@@ -101,7 +101,7 @@ func _physics_process (delta):
 	if popup_active:
 		return
 	
-	if Input.is_action_pressed("interact") and curr_button != null:
+	if curr_props.animal == Animals.Human and Input.is_action_pressed("interact") and curr_button != null:
 		curr_button.press()
 	# reset horizontal velocity
 	vel.x = 0

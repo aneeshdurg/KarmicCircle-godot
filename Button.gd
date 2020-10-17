@@ -5,11 +5,18 @@ signal ButtonPressed()
 func _ready():
 	pass
 
+var locked = false
+
 func press():
-	$active.visible = true
-	$inactive.visible = false
-	print("signaled")
+	if locked:
+		return
+	locked = true
+	$active.visible = !$active.visible
+	$inactive.visible = !$inactive.visible
 	emit_signal("ButtonPressed")
+	
+	yield(get_tree().create_timer(0.25), "timeout")
+	locked = false
 
 func _on_Button_body_entered(body):
 	if body.name == "Player":
