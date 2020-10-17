@@ -41,10 +41,10 @@ var humanProps = {
 var fishProps = {
 	animal = Animals.Fish,
 	
-	maxspeed = 400,
+	maxspeed = 100,
 	
 	speed_on_land = 100,
-	jump_force_on_land = 50,
+	jump_force_on_land = 10000,
 	gravity_on_land = 800,
 
 	speed_in_water = 200,
@@ -110,12 +110,22 @@ func _physics_process (delta):
 	if Input.is_action_pressed("move_left"):
 		vel.x -= getSpeed(curr_props)
 		sprite.flip_h = true
+		sprite.rotation = -0.1
 	elif Input.is_action_pressed("move_right"):
 		vel.x += getSpeed(curr_props)
+		sprite.rotation = 0.1
 		sprite.flip_h = false
 	else:
+		sprite.rotation = 0
 		vel.x = 0
 	vel.x = clamp(vel.x, -1 * curr_props.maxspeed, curr_props.maxspeed)
+
+	if curr_props.animal == Animals.Human:
+		if vel.y >= 0:
+			if abs(vel.x) != 0:
+				sprite.play("walk")
+			else:
+				sprite.play("default")
 
 	# applying the velocity
 	vel = move_and_slide(vel, Vector2.UP)
@@ -135,6 +145,13 @@ func _physics_process (delta):
 			) * delta;
 		else:
 			vel.y -= getJump(curr_props) * delta;
+	if curr_props.animal == Animals.Human:
+		if vel.y < 0:
+			print($HumanSprite.scale)
+			sprite.play("jump")
+			
+		if vel.y > 0 and not check_ground:
+			sprite.play("fall")
 	
 	# status effects
 	
@@ -213,3 +230,6 @@ func button_enter(button):
 	
 func button_exit(button):
 	curr_button = null
+
+func stop_physics():
+	popup_active = true

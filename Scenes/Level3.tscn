@@ -49,7 +49,7 @@ position = Vector2( -160, 8 )
 position = Vector2( 160, -56 )
 
 [node name="Area2D8" parent="Tiles" instance=ExtResource( 10 )]
-position = Vector2( 288, 40 )
+position = Vector2( 384, 40 )
 
 [node name="Tile02" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( -160, 40 )
@@ -82,10 +82,10 @@ position = Vector2( 96, 40 )
 position = Vector2( 128, 40 )
 
 [node name="Tile28" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 288, 72 )
+position = Vector2( 384, 72 )
 
 [node name="Tile14" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 160, 40 )
+position = Vector2( 256, 40 )
 
 [node name="Tile17" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 64, -24 )
@@ -96,14 +96,17 @@ position = Vector2( 96, -24 )
 [node name="Tile19" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 128, -24 )
 
+[node name="Tile76" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 128, -56 )
+
 [node name="Tile20" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 160, -24 )
 
 [node name="Tile15" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 192, 40 )
+position = Vector2( 288, 40 )
 
 [node name="Tile16" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 224, 40 )
+position = Vector2( 320, 40 )
 
 [node name="Tile09" parent="Tiles" instance=ExtResource( 6 )]
 position = Vector2( -192, -88 )
@@ -165,44 +168,62 @@ position = Vector2( 96, 72 )
 [node name="Tile38" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 128, 72 )
 
-[node name="Tile39" parent="Tiles" instance=ExtResource( 14 )]
+[node name="Tile70" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 160, 40 )
+
+[node name="Tile71" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 192, 40 )
+
+[node name="Tile72" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 224, 40 )
+
+[node name="Tile73" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 160, 72 )
 
-[node name="Tile40" parent="Tiles" instance=ExtResource( 14 )]
+[node name="Tile74" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 192, 72 )
 
-[node name="Tile41" parent="Tiles" instance=ExtResource( 14 )]
+[node name="Tile75" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 224, 72 )
+
+[node name="Tile39" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 256, 72 )
+
+[node name="Tile40" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 288, 72 )
+
+[node name="Tile41" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 320, 72 )
 
 [node name="Tile42" parent="Tiles" instance=ExtResource( 15 )]
 position = Vector2( -224, 40 )
 
 [node name="Tile43" parent="Tiles" instance=ExtResource( 6 )]
-position = Vector2( 256, 40 )
+position = Vector2( 352, 40 )
 
 [node name="Tile44" parent="Tiles" instance=ExtResource( 15 )]
-position = Vector2( 320, 40 )
+position = Vector2( 416, 40 )
 
 [node name="Tile45" parent="Tiles" instance=ExtResource( 15 )]
-position = Vector2( 320, 8 )
+position = Vector2( 416, 8 )
 
 [node name="Tile46" parent="Tiles" instance=ExtResource( 15 )]
-position = Vector2( 320, -24 )
+position = Vector2( 416, -24 )
 
 [node name="Tile47" parent="Tiles" instance=ExtResource( 15 )]
-position = Vector2( 320, -56 )
+position = Vector2( 416, -56 )
 
 [node name="Tile48" parent="Tiles" instance=ExtResource( 15 )]
-position = Vector2( 320, -88 )
+position = Vector2( 416, -88 )
 
 [node name="Tile01" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 320, -120 )
+position = Vector2( 416, -120 )
 
 [node name="Tile49" parent="Tiles" instance=ExtResource( 6 )]
-position = Vector2( 352, -120 )
+position = Vector2( 448, -120 )
 
 [node name="Tile50" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, -88 )
+position = Vector2( 448, -88 )
 
 [node name="Tile51" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( 224, -24 )
@@ -229,44 +250,44 @@ position = Vector2( -64, -88 )
 position = Vector2( 224, -56 )
 
 [node name="Tile59" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, -56 )
+position = Vector2( 448, -56 )
 
 [node name="Tile60" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 352, 104 )
+position = Vector2( 448, 104 )
 
 [node name="Tile61" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( -64, -56 )
 
 [node name="Tile62" parent="Tiles" instance=ExtResource( 14 )]
-position = Vector2( 320, 104 )
+position = Vector2( 416, 104 )
 
 [node name="Tile63" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 256, 104 )
+position = Vector2( 352, 104 )
 
 [node name="Tile64" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( -96, -56 )
 
 [node name="Tile65" parent="Tiles" instance=ExtResource( 14 )]
-position = Vector2( 288, 104 )
+position = Vector2( 384, 104 )
 
 [node name="Tile66" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, -24 )
+position = Vector2( 448, -24 )
 
 [node name="Tile67" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, 8 )
+position = Vector2( 448, 8 )
 
 [node name="Tile68" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, 40 )
+position = Vector2( 448, 40 )
 
 [node name="Tile69" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 352, 72 )
+position = Vector2( 448, 72 )
 
 [node name="curved1" type="Sprite" parent="Tiles"]
-position = Vector2( 320, 72 )
+position = Vector2( 416, 72 )
 texture = ExtResource( 12 )
 
 [node name="curved2" type="Sprite" parent="Tiles"]
-position = Vector2( 256, 72 )
+position = Vector2( 352, 72 )
 texture = ExtResource( 12 )
 flip_h = true
 
@@ -281,7 +302,7 @@ flip_h = true
 position = Vector2( 0, 16 )
 
 [node name="CP1" parent="Checkpoints" instance=ExtResource( 7 )]
-position = Vector2( 192, 16 )
+position = Vector2( 288, 16 )
 
 [node name="Goal" parent="Checkpoints" instance=ExtResource( 11 )]
 position = Vector2( -144, -80 )
@@ -296,16 +317,16 @@ scale = Vector2( 0.241342, 0.379032 )
 texture = ExtResource( 9 )
 
 [node name="Button" parent="." instance=ExtResource( 4 )]
-position = Vector2( 224, 16 )
+position = Vector2( 320, 16 )
 z_index = 1
 
 [node name="LockedTile3" parent="Button" instance=ExtResource( 3 )]
-position = Vector2( -320, -8 )
+position = Vector2( -416, -8 )
 z_index = 1
 button = NodePath("..")
 
 [node name="LockedTile4" parent="Button" instance=ExtResource( 3 )]
-position = Vector2( -320, -40 )
+position = Vector2( -416, -40 )
 z_index = 1
 button = NodePath("..")
 
