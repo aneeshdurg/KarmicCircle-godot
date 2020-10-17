@@ -64,6 +64,7 @@ var CP = null
 var hp : float = 100
 
 var cause = null
+var curr_button = null
 
 func setSprite(props):
 	for k in Sprites:
@@ -99,6 +100,9 @@ func _ready():
 func _physics_process (delta):
 	if popup_active:
 		return
+	
+	if Input.is_action_pressed("interact") and curr_button != null:
+		curr_button.press()
 	# reset horizontal velocity
 	vel.x = 0
 
@@ -198,9 +202,14 @@ func kill(death_cause):
 	get_node("UI/Health").text = "100/100"
 	position = CP.position
 	
-
 	hp = 100
 	setSprite(curr_props)
 	setCollision(curr_props)
 	popup_active = false
 	yield(Death, "DeathAnimationDone")
+
+func button_enter(button):
+	curr_button = button
+	
+func button_exit(button):
+	curr_button = null

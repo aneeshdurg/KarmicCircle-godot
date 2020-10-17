@@ -1,13 +1,16 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LockedTile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Button.tscn" type="PackedScene" id=4]
 [ext_resource path="res://InvisibleWall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprite/signs/lvl3/buttons.png" type="Texture" id=6]
 [ext_resource path="res://Checkpoint.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Water.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Goal.tscn" type="PackedScene" id=11]
 
-[node name="Level2" type="Node2D"]
+[node name="Level3" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
@@ -170,15 +173,11 @@ position = Vector2( 320, 104 )
 [node name="Area2D20" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 352, 104 )
 
-[node name="Area2D21" parent="Tiles" instance=ExtResource( 10 )]
-position = Vector2( 352, 72 )
-rotation = 0.00952875
-
 [node name="Area2D22" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 40 )
 
 [node name="Area2D23" parent="Tiles" instance=ExtResource( 10 )]
-position = Vector2( 384, 72 )
+position = Vector2( 352, 72 )
 
 [node name="Area2D24" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 104 )
@@ -186,8 +185,11 @@ position = Vector2( 384, 104 )
 [node name="Area2D26" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 40 )
 
-[node name="Area2D27" parent="Tiles" instance=ExtResource( 10 )]
+[node name="Area2D29" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 72 )
+
+[node name="Area2D27" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 384, 72 )
 
 [node name="Area2D28" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 104 )
@@ -214,3 +216,22 @@ position = Vector2( 608, -16 )
 z_index = -1
 
 [node name="Messages" type="Node" parent="."]
+
+[node name="Button" parent="." instance=ExtResource( 4 )]
+position = Vector2( 320, 112 )
+z_index = 1
+
+[node name="LockedTile" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 72 )
+z_index = 1
+button = NodePath("../../Level3/Button")
+
+[node name="LockedTile2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 104 )
+z_index = 1
+button = NodePath("../../Level3/Button")
+
+[node name="buttons" type="Sprite" parent="."]
+position = Vector2( 312, 176 )
+scale = Vector2( 0.48946, 0.5 )
+texture = ExtResource( 6 )

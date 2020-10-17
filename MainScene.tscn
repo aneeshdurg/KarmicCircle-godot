@@ -14,6 +14,10 @@
 [ext_resource path="res://sprite/signs/lvl1/goal.png" type="Texture" id=12]
 
 [node name="MainScene" type="Node2D"]
+position = Vector2( -224, 32 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
@@ -24,49 +28,79 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="Tiles" type="Node" parent="."]
 
 [node name="StaticBody2D" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 0, 40 )
+position = Vector2( -224, 72 )
 
 [node name="StaticBody2D2" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 32, 40 )
+position = Vector2( -192, 72 )
 
 [node name="StaticBody2D3" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 64, 40 )
+position = Vector2( -160, 72 )
 
 [node name="StaticBody2D4" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 96, 40 )
+position = Vector2( -128, 72 )
 
 [node name="StaticBody2D5" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 128, 40 )
+position = Vector2( -96, 72 )
 
 [node name="StaticBody2D11" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 160, 40 )
+position = Vector2( -64, 72 )
 
 [node name="StaticBody2D12" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 192, 40 )
+position = Vector2( -32, 72 )
 
 [node name="StaticBody2D13" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 224, 40 )
+position = Vector2( 0, 72 )
+
+[node name="StaticBody2D43" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 32, 72 )
+
+[node name="StaticBody2D44" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 64, 72 )
+
+[node name="StaticBody2D45" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 96, 72 )
+
+[node name="StaticBody2D46" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 32, 72 )
+
+[node name="StaticBody2D47" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 64, 72 )
+
+[node name="StaticBody2D48" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 96, 72 )
 
 [node name="StaticBody2D14" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 256, 40 )
+position = Vector2( 128, 72 )
 
 [node name="StaticBody2D15" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 288, 40 )
+position = Vector2( 160, 72 )
 
 [node name="StaticBody2D16" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 320, 40 )
+position = Vector2( 192, 72 )
 
 [node name="StaticBody2D19" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 480, 24 )
+position = Vector2( 352, 56 )
 
 [node name="StaticBody2D20" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 512, 24 )
+position = Vector2( 384, 56 )
 
 [node name="StaticBody2D21" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 544, 24 )
 
 [node name="StaticBody2D22" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 576, 24 )
+
+[node name="StaticBody2D41" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 480, 24 )
+
+[node name="StaticBody2D42" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 512, 24 )
+
+[node name="StaticBody2D50" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 416, 24 )
+
+[node name="StaticBody2D51" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 448, 24 )
 
 [node name="StaticBody2D25" parent="Tiles" instance=ExtResource( 2 )]
 position = Vector2( 720, 24 )
@@ -123,31 +157,31 @@ position = Vector2( 608, 24 )
 position = Vector2( 640, 24 )
 
 [node name="StaticBody2D17" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 384, 40 )
+position = Vector2( 256, 72 )
 
 [node name="StaticBody2D18" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 416, 40 )
+position = Vector2( 288, 72 )
 
 [node name="StaticBody2D6" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -40, 32 )
+position = Vector2( -264, 64 )
 
 [node name="StaticBody2D7" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -40, -16 )
+position = Vector2( -264, 16 )
 
 [node name="StaticBody2D8" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -40, -64 )
+position = Vector2( -264, -32 )
 
 [node name="StaticBody2D9" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -40, -112 )
+position = Vector2( -216, -80 )
 
 [node name="StaticBody2D10" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -40, 80 )
+position = Vector2( -264, 112 )
 
 [node name="Area2D6" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 360, 40 )
+position = Vector2( 232, 72 )
 
 [node name="Area2D7" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 440, 40 )
+position = Vector2( 312, 72 )
 
 [node name="Area2D8" parent="Tiles" instance=ExtResource( 8 )]
 position = Vector2( 680, 16 )
@@ -159,17 +193,17 @@ position = Vector2( 1224, -48 )
 position = Vector2( 1224, -96 )
 
 [node name="logo" type="Sprite" parent="."]
-position = Vector2( -136, -24 )
+position = Vector2( -200, -128 )
 z_index = -1
 texture = ExtResource( 4 )
 
 [node name="Checkpoints" type="Node" parent="."]
 
 [node name="CP0" parent="Checkpoints" instance=ExtResource( 7 )]
-position = Vector2( 0, 16 )
+position = Vector2( -224, 48 )
 
 [node name="CP1" parent="Checkpoints" instance=ExtResource( 7 )]
-position = Vector2( 480, 0 )
+position = Vector2( 352, 32 )
 
 [node name="CP2" parent="Checkpoints" instance=ExtResource( 7 )]
 position = Vector2( 640, 0 )
@@ -182,30 +216,30 @@ file_path = "res://Scenes/Level2.tscn"
 [node name="Messages" type="Node" parent="."]
 
 [node name="movement" type="Sprite" parent="Messages"]
-position = Vector2( 120, -40 )
+position = Vector2( -104, -8 )
 scale = Vector2( 0.480366, 0.516667 )
 z_index = -1
 texture = ExtResource( 3 )
 
 [node name="jump" type="Sprite" parent="Messages"]
-position = Vector2( 408, -72 )
+position = Vector2( 288, -46 )
 scale = Vector2( 0.50625, 0.37037 )
 z_index = -1
 texture = ExtResource( 6 )
 
 [node name="jump_hint" type="Sprite" parent="Messages"]
-position = Vector2( 416, -64 )
+position = Vector2( 296, -38 )
 scale = Vector2( 0.367188, 0.25 )
 z_index = -1
 texture = ExtResource( 9 )
 
-[node name="checkpoints" type="Sprite" parent="Messages/jump_hint"]
-position = Vector2( 849.701, 96 )
-scale = Vector2( 1.02005, 1.5 )
+[node name="checkpoints" type="Sprite" parent="Messages"]
+position = Vector2( 728, -40 )
+scale = Vector2( 0.37455, 0.375 )
 z_index = -1
 texture = ExtResource( 10 )
 
-[node name="goal" type="Sprite" parent="."]
+[node name="goal" type="Sprite" parent="Messages"]
 position = Vector2( 1112, -56 )
 scale = Vector2( 0.408621, 0.403846 )
 z_index = -1
