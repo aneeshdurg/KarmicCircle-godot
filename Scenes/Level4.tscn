@@ -1173,6 +1173,7 @@ position = Vector2( 1024, -112 )
 [node name="Goal" parent="Checkpoints" instance=ExtResource( 11 )]
 position = Vector2( 840, -112 )
 z_index = -1
+file_path = "res://Scenes/Level5.tscn"
 
 [node name="Messages" type="Node" parent="."]
 
