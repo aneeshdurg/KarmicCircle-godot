@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/flying_hint.png-7e3be19c84b3f9045108ff1eab64b479.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://sprite/signs/lvl5/flying_hint.png"
+dest_files=[ "res://.import/flying_hint.png-7e3be19c84b3f9045108ff1eab64b479.stex" ]
 
 [params]
 

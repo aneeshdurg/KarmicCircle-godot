@@ -56,6 +56,24 @@ var fishProps = {
 	breathes_air = false,
 }
 
+var birdProps = {
+	animal = Animals.Bird,
+	
+	maxspeed = 600,
+	
+	speed_on_land = 300,
+	jump_force_on_land = 900,
+	gravity_on_land = 800,
+
+	speed_in_water = 100,
+	jump_force_in_water = 50,
+	gravity_in_water = 100,
+
+	can_jump_in_air = true,
+	can_jump_in_water = true,
+	breathes_air = true,
+}
+
 const suffocation_dps : int = 20
 
 var curr_props = humanProps
@@ -95,6 +113,7 @@ func getGravity(props):
 func _ready():
 	Sprites[Animals.Human] = $HumanSprite
 	Sprites[Animals.Fish] = $FishSprite
+	Sprites[Animals.Bird] = $BirdSprite
 	setSprite(curr_props)
 
 func _physics_process (delta):
@@ -126,7 +145,8 @@ func _physics_process (delta):
 				sprite.play("walk")
 			else:
 				sprite.play("default")
-
+	
+	var orig_y_vel = vel.y
 	# applying the velocity
 	vel = move_and_slide(vel, Vector2.UP)
 	# gravity
@@ -147,7 +167,6 @@ func _physics_process (delta):
 			vel.y -= getJump(curr_props) * delta;
 	if curr_props.animal == Animals.Human:
 		if vel.y < 0:
-			print($HumanSprite.scale)
 			sprite.play("jump")
 			
 		if vel.y > 0 and not check_ground:
@@ -155,14 +174,22 @@ func _physics_process (delta):
 	
 	# status effects
 	
+	var old_hp = hp
+	
 	if (in_water && curr_props.breathes_air) || (!in_water && !curr_props.breathes_air):
 		hp -= suffocation_dps * delta
 		hp = max(hp, 0)
-		get_node("UI/Health").text = str(ceil(hp)) + "/100"
 		if in_water:
 			cause = CausesOfDeath.Drowning
 		else:
 			cause = CausesOfDeath.Suffocating
+	if !in_water and orig_y_vel > getGravity(curr_props) and is_on_floor():
+		cause = CausesOfDeath.Falling
+		hp = 0
+	
+	if old_hp != hp:
+		# TODO make the health bar a scene with a rolling animation
+		get_node("UI/Health").text = str(ceil(hp)) + "/100"
 	
 	if hp == 0:
 		kill(cause)
@@ -195,10 +222,16 @@ func setCollision(props):
 		$CollisionShape2D.get_shape().set_height(23)
 		$CollisionShape2D.get_shape().set_radius(5.73)
 		$CollisionShape2D.rotation = PI / 2
+	elif props.animal == Animals.Bird:
+		$CollisionShape2D.get_shape().set_height(20)
+		$CollisionShape2D.get_shape().set_radius(5.73)
+		$CollisionShape2D.rotation = PI / 2
 
 func kill(death_cause):
 	if death_cause == CausesOfDeath.Drowning:
 		curr_props = fishProps
+	elif death_cause == CausesOfDeath.Falling:
+		curr_props = birdProps
 	else:
 		curr_props = humanProps
 		
@@ -208,7 +241,8 @@ func kill(death_cause):
 		death_msg += "human."
 	elif curr_props.animal == Animals.Fish:
 		death_msg += "fish."
-		
+	elif curr_props.animal == Animals.Bird:
+		death_msg += "bird."
 
 	popup_active = true
 	Death.animate(death_msg)
