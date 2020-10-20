@@ -453,6 +453,7 @@ position = Vector2( 488, 16 )
 [node name="Goal" parent="Checkpoints" instance=ExtResource( 11 )]
 position = Vector2( 608, -16 )
 z_index = -1
+file_path = "res://Scenes/Level6.tscn"
 
 [node name="message" type="Sprite" parent="Checkpoints"]
 position = Vector2( -184, -112 )
