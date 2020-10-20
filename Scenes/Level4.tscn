@@ -37,7 +37,7 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="Tiles" type="Node" parent="."]
 
 [node name="Tile00" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 112, 40 )
+position = Vector2( 160, 40 )
 
 [node name="Area2D" parent="Tiles" instance=ExtResource( 18 )]
 position = Vector2( 72, 40 )
@@ -74,23 +74,29 @@ position = Vector2( 416, 168 )
 [node name="Tile31" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 448, 168 )
 
-[node name="Tile08" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 144, 40 )
-
 [node name="Tile22" parent="Tiles" instance=ExtResource( 9 )]
 position = Vector2( 32, 72 )
 
 [node name="Tile21" parent="Tiles" instance=ExtResource( 6 )]
 position = Vector2( 0, 72 )
 
+[node name="Tile08" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 192, 40 )
+
+[node name="Tile24" parent="Tiles" instance=ExtResource( 6 )]
+position = Vector2( 192, 72 )
+
+[node name="Tile13" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 224, 40 )
+
+[node name="Tile26" parent="Tiles" instance=ExtResource( 6 )]
+position = Vector2( 224, 72 )
+
 [node name="Tile20" parent="Tiles" instance=ExtResource( 8 )]
 position = Vector2( -32, 72 )
 
 [node name="Tile23" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 112, 72 )
-
-[node name="Tile24" parent="Tiles" instance=ExtResource( 9 )]
-position = Vector2( 144, 72 )
+position = Vector2( 160, 72 )
 
 [node name="Tile09" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 256, 40 )
@@ -133,12 +139,6 @@ position = Vector2( 520, -144 )
 
 [node name="Tile25" parent="Tiles" instance=ExtResource( 6 )]
 position = Vector2( 256, 72 )
-
-[node name="Tile26" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 224, 72 )
-
-[node name="Tile13" parent="Tiles" instance=ExtResource( 2 )]
-position = Vector2( 224, 40 )
 
 [node name="Tile67" parent="Tiles" instance=ExtResource( 8 )]
 position = Vector2( 280, -112 )
@@ -576,7 +576,7 @@ position = Vector2( 608, 112 )
 position = Vector2( 608, 112 )
 
 [node name="Area2D10" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 184, 40 )
+position = Vector2( 120, 40 )
 z_index = -1
 
 [node name="Tile16" parent="Tiles" instance=ExtResource( 16 )]
@@ -739,10 +739,10 @@ position = Vector2( 64, 72 )
 position = Vector2( 80, 72 )
 
 [node name="Tile86" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 176, 72 )
+position = Vector2( 112, 72 )
 
 [node name="Tile87" parent="Tiles" instance=ExtResource( 13 )]
-position = Vector2( 192, 72 )
+position = Vector2( 128, 72 )
 
 [node name="curved1" type="Sprite" parent="Tiles"]
 position = Vector2( 320, 168 )

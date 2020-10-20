@@ -24,6 +24,11 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": false,
 "name": "jump",
@@ -32,11 +37,6 @@ animations = [ {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "walk",
 "speed": 5.0
 } ]
 
@@ -107,6 +107,8 @@ visible = false
 texture = ExtResource( 3 )
 
 [node name="BirdSprite" type="AnimatedSprite" parent="."]
+visible = false
 position = Vector2( 0.297302, -6.98659 )
 frames = SubResource( 3 )
 animation = "fly"
+frame = 2

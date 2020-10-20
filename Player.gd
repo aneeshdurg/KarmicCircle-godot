@@ -261,8 +261,8 @@ func kill(death_cause):
 	hp = 100
 	setSprite(curr_props)
 	setCollision(curr_props)
-	popup_active = false
 	yield(Death, "DeathAnimationDone")
+	popup_active = false
 
 func button_enter(button):
 	curr_button = button
