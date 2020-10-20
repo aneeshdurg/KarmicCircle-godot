@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sprite/misc/seaweed3.png" type="Texture" id=1]
+[ext_resource path="res://sprite/misc/seaweed2.png" type="Texture" id=2]
+[ext_resource path="res://sprite/misc/seaweed1.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Seaweed" type="AnimatedSprite"]
+frames = SubResource( 1 )
+playing = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tiles/Tile00.tscn" type="PackedScene" id=2]
@@ -20,6 +20,11 @@
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=18]
 [ext_resource path="res://sprite/signs/lvl4/hint.png" type="Texture" id=19]
 [ext_resource path="res://sprite/signs/lvl4/message.png" type="Texture" id=20]
+[ext_resource path="res://sprite/water.png" type="Texture" id=21]
+[ext_resource path="res://sprite/misc/coral1.png" type="Texture" id=22]
+[ext_resource path="res://sprite/misc/seaweed1.png" type="Texture" id=23]
+[ext_resource path="res://sprite/misc/seaweed3.png" type="Texture" id=24]
+[ext_resource path="res://sprite/misc/tree.png" type="Texture" id=25]
 
 [node name="Level4" type="Node2D"]
 
@@ -55,6 +60,7 @@ position = Vector2( 416, 40 )
 
 [node name="Tile12" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 320, 136 )
+z_index = 1
 
 [node name="Tile06" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 352, 168 )
@@ -154,9 +160,11 @@ position = Vector2( 352, 72 )
 
 [node name="Area2D4" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 352, 104 )
+z_index = 1
 
 [node name="Area2D5" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 352, 136 )
+z_index = 1
 
 [node name="Tile14" parent="Tiles" instance=ExtResource( 3 )]
 position = Vector2( 448, 40 )
@@ -181,18 +189,23 @@ position = Vector2( 384, 72 )
 
 [node name="Area2D8" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 104 )
+z_index = 1
 
 [node name="Area2D9" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 136 )
+z_index = 1
 
 [node name="Area2D13" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 104 )
+z_index = 1
 
 [node name="Area2D14" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 136 )
+z_index = 1
 
 [node name="Area2D15" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 448, 104 )
+z_index = 1
 
 [node name="Area2D27" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 616, -144 )
@@ -214,117 +227,154 @@ position = Vector2( 584, -144 )
 
 [node name="Area2D16" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 448, 136 )
+z_index = 1
 
 [node name="Area2D32" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 544, 264 )
+z_index = 1
 
 [node name="Area2D33" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 544, 296 )
+z_index = 1
 
 [node name="Area2D34" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 576, 264 )
+z_index = 1
 
 [node name="Area2D35" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 576, 296 )
+z_index = 1
 
 [node name="Tile146" parent="Tiles" instance=ExtResource( 8 )]
 position = Vector2( 608, 232 )
 
 [node name="Area2D36" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 608, 264 )
+z_index = 1
 
 [node name="Area2D37" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 608, 296 )
+z_index = 1
 
 [node name="Area2D38" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 640, 264 )
+z_index = 1
 
 [node name="Area2D39" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 640, 296 )
+z_index = 1
 
 [node name="Area2D44" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 672, 264 )
+z_index = 1
 
 [node name="Area2D45" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 672, 296 )
+z_index = 1
 
 [node name="Area2D46" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 704, 264 )
+z_index = 1
 
 [node name="Area2D47" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 704, 296 )
+z_index = 1
 
 [node name="Area2D48" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 736, 264 )
+z_index = 1
 
 [node name="Area2D49" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 736, 296 )
+z_index = 1
 
 [node name="Area2D50" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 768, 264 )
+z_index = 1
 
 [node name="Area2D51" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 768, 296 )
+z_index = 1
 
 [node name="Area2D52" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 800, 264 )
+z_index = 1
 
 [node name="Area2D53" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 800, 296 )
+z_index = 1
 
 [node name="Area2D54" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 832, 264 )
+z_index = 1
 
 [node name="Area2D55" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 832, 296 )
+z_index = 1
 
 [node name="Area2D56" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 864, 264 )
+z_index = 1
 
 [node name="Area2D57" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 864, 296 )
+z_index = 1
 
 [node name="Area2D58" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 896, 264 )
+z_index = 1
 
 [node name="Area2D59" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 896, 296 )
+z_index = 1
 
 [node name="Area2D60" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 928, 264 )
+z_index = 1
 
 [node name="Area2D61" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 928, 296 )
+z_index = 1
 
 [node name="Area2D62" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 960, 264 )
+z_index = 1
 
 [node name="Area2D63" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 960, 296 )
+z_index = 1
 
 [node name="Area2D64" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 992, 264 )
+z_index = 1
 
 [node name="Area2D65" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 992, 296 )
+z_index = 1
 
 [node name="Area2D66" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1024, 264 )
+z_index = 1
 
 [node name="Area2D67" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1024, 296 )
+z_index = 1
 
 [node name="Area2D72" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1056, 264 )
+z_index = 1
 
 [node name="Area2D73" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1056, 296 )
+z_index = 1
 
 [node name="Area2D68" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1088, 264 )
+z_index = 1
 
 [node name="Area2D69" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1088, 296 )
+z_index = 1
 
 [node name="Area2D70" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 1088, 200 )
@@ -499,6 +549,7 @@ position = Vector2( 800, -136 )
 
 [node name="Tile153" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 800, -232 )
+z_index = 1
 
 [node name="Tile154" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 800, -264 )
@@ -533,6 +584,7 @@ position = Vector2( 320, 72 )
 
 [node name="Tile17" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 320, 104 )
+z_index = 1
 
 [node name="Tile18" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 288, 104 )
@@ -599,6 +651,7 @@ position = Vector2( 512, 264 )
 
 [node name="Tile114" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 512, 296 )
+z_index = 1
 
 [node name="Tile44" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 448, 232 )
@@ -814,6 +867,7 @@ position = Vector2( 1152, 72 )
 
 [node name="Tile166" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 1120, 296 )
+z_index = 1
 
 [node name="Tile167" parent="Tiles" instance=ExtResource( 9 )]
 position = Vector2( 1152, 360 )
@@ -925,6 +979,7 @@ position = Vector2( 608, 136 )
 
 [node name="Tile198" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 640, 136 )
+z_index = 1
 
 [node name="Tile199" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 608, 168 )
@@ -1209,3 +1264,328 @@ position = Vector2( 1000, -112 )
 [node name="LockedTile3" parent="Button3" instance=ExtResource( 17 )]
 position = Vector2( -120, -8 )
 button = NodePath("..")
+
+[node name="Sprites" type="Node" parent="."]
+
+[node name="water" type="Sprite" parent="Sprites"]
+position = Vector2( 320, 40 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water2" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 40 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water3" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 72 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water4" type="Sprite" parent="Sprites"]
+position = Vector2( 544, 8 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water5" type="Sprite" parent="Sprites"]
+position = Vector2( 576, 8 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water6" type="Sprite" parent="Sprites"]
+position = Vector2( 512, 168 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water7" type="Sprite" parent="Sprites"]
+position = Vector2( 608, 232 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water8" type="Sprite" parent="Sprites"]
+position = Vector2( 1024, 232 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water9" type="Sprite" parent="Sprites"]
+position = Vector2( 1024, -88 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="water10" type="Sprite" parent="Sprites"]
+position = Vector2( 552, -144 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="seaweed1" type="Sprite" parent="Sprites"]
+position = Vector2( 536, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed2" type="Sprite" parent="Sprites"]
+position = Vector2( 560, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed3" type="Sprite" parent="Sprites"]
+position = Vector2( 576, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed4" type="Sprite" parent="Sprites"]
+position = Vector2( 600, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed5" type="Sprite" parent="Sprites"]
+position = Vector2( 616, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed6" type="Sprite" parent="Sprites"]
+position = Vector2( 632, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed7" type="Sprite" parent="Sprites"]
+position = Vector2( 656, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed8" type="Sprite" parent="Sprites"]
+position = Vector2( 680, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed9" type="Sprite" parent="Sprites"]
+position = Vector2( 704, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed10" type="Sprite" parent="Sprites"]
+position = Vector2( 648, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed11" type="Sprite" parent="Sprites"]
+position = Vector2( 712, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed12" type="Sprite" parent="Sprites"]
+position = Vector2( 728, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed13" type="Sprite" parent="Sprites"]
+position = Vector2( 744, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed14" type="Sprite" parent="Sprites"]
+position = Vector2( 776, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed15" type="Sprite" parent="Sprites"]
+position = Vector2( 800, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed16" type="Sprite" parent="Sprites"]
+position = Vector2( 816, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed17" type="Sprite" parent="Sprites"]
+position = Vector2( 848, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed18" type="Sprite" parent="Sprites"]
+position = Vector2( 864, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed19" type="Sprite" parent="Sprites"]
+position = Vector2( 888, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed20" type="Sprite" parent="Sprites"]
+position = Vector2( 904, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed21" type="Sprite" parent="Sprites"]
+position = Vector2( 920, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed22" type="Sprite" parent="Sprites"]
+position = Vector2( 936, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed23" type="Sprite" parent="Sprites"]
+position = Vector2( 952, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed24" type="Sprite" parent="Sprites"]
+position = Vector2( 992, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed25" type="Sprite" parent="Sprites"]
+position = Vector2( 1008, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed26" type="Sprite" parent="Sprites"]
+position = Vector2( 1024, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed27" type="Sprite" parent="Sprites"]
+position = Vector2( 1040, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed28" type="Sprite" parent="Sprites"]
+position = Vector2( 1056, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed29" type="Sprite" parent="Sprites"]
+position = Vector2( 1072, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed30" type="Sprite" parent="Sprites"]
+position = Vector2( 1088, 296 )
+texture = ExtResource( 23 )
+
+[node name="seaweed31" type="Sprite" parent="Sprites"]
+position = Vector2( 1096, 296 )
+texture = ExtResource( 23 )
+
+[node name="coral1" type="Sprite" parent="Sprites"]
+position = Vector2( 592, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral2" type="Sprite" parent="Sprites"]
+position = Vector2( 760, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral3" type="Sprite" parent="Sprites"]
+position = Vector2( 576, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral4" type="Sprite" parent="Sprites"]
+position = Vector2( 608, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral5" type="Sprite" parent="Sprites"]
+position = Vector2( 832, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral6" type="Sprite" parent="Sprites"]
+position = Vector2( 968, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="coral7" type="Sprite" parent="Sprites"]
+position = Vector2( 976, 296 )
+z_index = -2
+texture = ExtResource( 22 )
+
+[node name="tree" type="Sprite" parent="Sprites"]
+position = Vector2( 872, -264 )
+texture = ExtResource( 25 )
+
+[node name="seaweed39" type="Sprite" parent="Sprites"]
+position = Vector2( 824, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed40" type="Sprite" parent="Sprites"]
+position = Vector2( 840, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed41" type="Sprite" parent="Sprites"]
+position = Vector2( 848, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed42" type="Sprite" parent="Sprites"]
+position = Vector2( 880, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed43" type="Sprite" parent="Sprites"]
+position = Vector2( 896, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed44" type="Sprite" parent="Sprites"]
+position = Vector2( 912, -232 )
+texture = ExtResource( 23 )
+
+[node name="seaweed32" type="Sprite" parent="Sprites"]
+position = Vector2( 344, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed33" type="Sprite" parent="Sprites"]
+position = Vector2( 360, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed34" type="Sprite" parent="Sprites"]
+position = Vector2( 384, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed35" type="Sprite" parent="Sprites"]
+position = Vector2( 400, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed36" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed37" type="Sprite" parent="Sprites"]
+position = Vector2( 432, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed38" type="Sprite" parent="Sprites"]
+position = Vector2( 448, 136 )
+texture = ExtResource( 23 )
+
+[node name="coral8" type="Sprite" parent="Sprites"]
+position = Vector2( 376, 136 )
+z_index = -1
+texture = ExtResource( 22 )
+
+[node name="seaweed45" type="Sprite" parent="Sprites"]
+position = Vector2( 664, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed46" type="Sprite" parent="Sprites"]
+position = Vector2( 688, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed47" type="Sprite" parent="Sprites"]
+position = Vector2( 736, 136 )
+texture = ExtResource( 24 )
+
+[node name="seaweed48" type="Sprite" parent="Sprites"]
+position = Vector2( 696, 136 )
+texture = ExtResource( 23 )
+
+[node name="seaweed49" type="Sprite" parent="Sprites"]
+position = Vector2( 720, 136 )
+texture = ExtResource( 23 )
+
+[node name="tree2" type="Sprite" parent="Sprites"]
+position = Vector2( 704, 104 )
+z_index = -1
+texture = ExtResource( 25 )
+
+[node name="seaweed3" type="Sprite" parent="."]
+position = Vector2( 432, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed4" type="Sprite" parent="."]
+position = Vector2( 448, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed5" type="Sprite" parent="."]
+position = Vector2( 464, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed6" type="Sprite" parent="."]
+position = Vector2( 480, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed7" type="Sprite" parent="."]
+position = Vector2( 496, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed8" type="Sprite" parent="."]
+position = Vector2( 544, -176 )
+texture = ExtResource( 24 )
+
+[node name="seaweed9" type="Sprite" parent="."]
+position = Vector2( 552, -176 )
+texture = ExtResource( 24 )

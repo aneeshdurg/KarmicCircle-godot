@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://sprite/misc/coral1.png" type="Texture" id=2]
 [ext_resource path="res://sprite/signs/lvl2/swimming.png" type="Texture" id=3]
 [ext_resource path="res://sprite/signs/lvl2/thesoul.png" type="Texture" id=4]
 [ext_resource path="res://InvisibleWall.tscn" type="PackedScene" id=5]
@@ -17,6 +18,10 @@
 [ext_resource path="res://Tiles/Tile10.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Tiles/Tile21.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Tiles/Tile12.tscn" type="PackedScene" id=18]
+[ext_resource path="res://sprite/water.png" type="Texture" id=19]
+[ext_resource path="res://sprite/misc/seaweed2.png" type="Texture" id=20]
+[ext_resource path="res://sprite/misc/seaweed1.png" type="Texture" id=21]
+[ext_resource path="res://sprite/misc/tree.png" type="Texture" id=22]
 
 [node name="Level2" type="Node2D"]
 
@@ -45,69 +50,91 @@ position = Vector2( -40, 80 )
 
 [node name="Area2D3" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 192, 40 )
+z_index = 1
 
 [node name="Area2D4" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 224, 40 )
+z_index = 1
 
 [node name="Area2D5" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 256, 40 )
+z_index = 1
 
 [node name="Area2D8" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 288, 40 )
+z_index = 1
 
 [node name="Area2D9" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 192, 72 )
+z_index = 1
 
 [node name="Area2D10" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 224, 72 )
+z_index = 1
 
 [node name="Area2D11" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 256, 72 )
+z_index = 1
 
 [node name="Area2D12" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 288, 72 )
+z_index = 1
 
 [node name="Area2D13" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 192, 104 )
+z_index = 1
 
 [node name="Area2D14" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 224, 104 )
+z_index = 1
 
 [node name="Area2D15" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 256, 104 )
+z_index = 1
 
 [node name="Area2D16" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 288, 104 )
+z_index = 1
 
 [node name="Area2D18" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 320, 72 )
+z_index = 1
 
 [node name="Area2D19" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 320, 104 )
+z_index = 1
 
 [node name="Area2D20" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 352, 104 )
+z_index = 1
 
 [node name="Area2D22" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 40 )
+z_index = 1
 
 [node name="Area2D23" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 72 )
+z_index = 1
 
 [node name="Area2D25" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 352, 72 )
+z_index = 1
 
 [node name="Area2D24" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 384, 104 )
+z_index = 1
 
 [node name="Area2D26" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 40 )
+z_index = 1
 
 [node name="Area2D27" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 72 )
+z_index = 1
 
 [node name="Area2D28" parent="Tiles" instance=ExtResource( 10 )]
 position = Vector2( 416, 104 )
+z_index = 1
 
 [node name="StaticBody2D55" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( 648, -32 )
@@ -174,6 +201,7 @@ position = Vector2( 160, 72 )
 
 [node name="Tile15" parent="Tiles" instance=ExtResource( 18 )]
 position = Vector2( 160, 104 )
+z_index = 1
 
 [node name="Tile16" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 448, 72 )
@@ -186,6 +214,7 @@ position = Vector2( 576, 8 )
 
 [node name="Tile23" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 448, 104 )
+z_index = 1
 
 [node name="Tile24" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 0, 72 )
@@ -348,3 +377,72 @@ position = Vector2( 320, 96 )
 scale = Vector2( 0.532051, 0.65 )
 z_index = -1
 texture = ExtResource( 3 )
+
+[node name="Sprites" type="Node" parent="."]
+
+[node name="coral2" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 104 )
+z_index = -2
+texture = ExtResource( 2 )
+
+[node name="seaweed1" type="Sprite" parent="Sprites/coral2"]
+position = Vector2( -96, -192 )
+texture = ExtResource( 21 )
+
+[node name="seaweed2" type="Sprite" parent="Sprites/coral2"]
+position = Vector2( -80, -192 )
+texture = ExtResource( 21 )
+
+[node name="seaweed3" type="Sprite" parent="Sprites/coral2"]
+position = Vector2( -64, -192 )
+texture = ExtResource( 21 )
+
+[node name="coral1" type="Sprite" parent="Sprites"]
+position = Vector2( 208, 104 )
+z_index = -2
+texture = ExtResource( 2 )
+
+[node name="water" type="Sprite" parent="Sprites"]
+position = Vector2( 160, 40 )
+z_index = -1
+texture = ExtResource( 19 )
+
+[node name="water2" type="Sprite" parent="Sprites"]
+position = Vector2( 448, 40 )
+z_index = -1
+texture = ExtResource( 19 )
+
+[node name="water3" type="Sprite" parent="Sprites"]
+position = Vector2( 320, 40 )
+z_index = -1
+texture = ExtResource( 19 )
+
+[node name="water4" type="Sprite" parent="Sprites"]
+position = Vector2( 352, 40 )
+z_index = -1
+texture = ExtResource( 19 )
+
+[node name="seaweed1" type="Sprite" parent="Sprites"]
+position = Vector2( 184, 104 )
+texture = ExtResource( 21 )
+
+[node name="seaweed2" type="Sprite" parent="Sprites"]
+position = Vector2( 208, 104 )
+texture = ExtResource( 21 )
+
+[node name="seaweed3" type="Sprite" parent="Sprites"]
+position = Vector2( 224, 104 )
+texture = ExtResource( 21 )
+
+[node name="seaweed4" type="Sprite" parent="Sprites"]
+position = Vector2( 408, 104 )
+texture = ExtResource( 21 )
+
+[node name="seaweed5" type="Sprite" parent="Sprites"]
+position = Vector2( 424, 104 )
+texture = ExtResource( 20 )
+
+[node name="tree" type="Sprite" parent="."]
+position = Vector2( 336, -120 )
+z_index = -2
+texture = ExtResource( 22 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tiles/Tile01.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Tiles/Tile21.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Tiles/Tile10.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Tiles/Tile20.tscn" type="PackedScene" id=16]
+[ext_resource path="res://sprite/water.png" type="Texture" id=17]
 
 [node name="Level3" type="Node2D"]
 
@@ -338,3 +339,7 @@ z_index = 1
 position = Vector2( -48, -8 )
 button = NodePath("..")
 defaultLocked = false
+
+[node name="water" type="Sprite" parent="."]
+position = Vector2( 352, 40 )
+texture = ExtResource( 17 )
