@@ -139,7 +139,7 @@ func _physics_process (delta):
 		vel.x = 0
 	vel.x = clamp(vel.x, -1 * curr_props.maxspeed, curr_props.maxspeed)
 
-	if curr_props.animal == Animals.Human:
+	if curr_props.animal != Animals.Fish:
 		if vel.y >= 0:
 			if abs(vel.x) != 0:
 				sprite.play("walk")
@@ -171,6 +171,11 @@ func _physics_process (delta):
 			
 		if vel.y > 0 and not check_ground:
 			sprite.play("fall")
+			
+	elif curr_props.animal == Animals.Bird:
+		print(vel.y, " ", check_ground)
+		if not is_on_floor():
+			sprite.play("fly")
 	
 	# status effects
 	
