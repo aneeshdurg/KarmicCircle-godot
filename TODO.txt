@@ -1,3 +1,3 @@
 + restart button
++ restart from last checkpoint button
 + Death counter
-+ Fix game unpausing before death screen completes

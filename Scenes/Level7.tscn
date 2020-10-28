@@ -1,7 +1,7 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://sprite/misc/tree.png" type="Texture" id=2]
+[ext_resource path="res://Tiles/Tile11.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Water.tscn" type="PackedScene" id=3]
 [ext_resource path="res://sprite/water.png" type="Texture" id=4]
 [ext_resource path="res://InvisibleWall.tscn" type="PackedScene" id=5]
@@ -10,7 +10,6 @@
 [ext_resource path="res://Tiles/Tile01.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Tiles/Tile22.tscn" type="PackedScene" id=9]
 [ext_resource path="res://sprite/misc/seaweed1.png" type="Texture" id=10]
-[ext_resource path="res://Goal.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Tiles/Tile02.tscn" type="PackedScene" id=12]
 [ext_resource path="res://sprite/misc/coral1.png" type="Texture" id=13]
 [ext_resource path="res://Tiles/Tile20.tscn" type="PackedScene" id=14]
@@ -18,9 +17,9 @@
 [ext_resource path="res://Tiles/Tile10.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Tiles/Tile21.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Tiles/Tile12.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Background/SkyBackground.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Spikes.tscn" type="PackedScene" id=19]
 
-[node name="Level6" type="Node2D"]
+[node name="Level7" type="Node2D"]
 __meta__ = {
 "_edit_horizontal_guides_": [ -296.0 ]
 }
@@ -93,35 +92,14 @@ position = Vector2( 584, -224 )
 [node name="StaticBody2D25" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( 632, -224 )
 
-[node name="StaticBody2D33" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 680, -224 )
-
 [node name="StaticBody2D10" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( -40, 64 )
 
-[node name="StaticBody2D27" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, 64 )
-
-[node name="StaticBody2D28" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, 16 )
-
-[node name="StaticBody2D29" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, -32 )
-
-[node name="StaticBody2D30" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, -80 )
-
-[node name="StaticBody2D31" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, -128 )
-
-[node name="StaticBody2D35" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, -176 )
-
-[node name="StaticBody2D32" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( 712, 112 )
-
 [node name="Tile00" parent="Tiles" instance=ExtResource( 6 )]
 position = Vector2( 0, 40 )
+
+[node name="Tile07" parent="Tiles" instance=ExtResource( 6 )]
+position = Vector2( 512, 456 )
 
 [node name="Tile154" parent="Tiles" instance=ExtResource( 6 )]
 position = Vector2( 256, -112 )
@@ -131,6 +109,12 @@ position = Vector2( 32, 40 )
 
 [node name="Tile20" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 128, 488 )
+
+[node name="Tile21" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 712, 408 )
+
+[node name="Tile22" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 512, 392 )
 
 [node name="Tile105" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 256, 392 )
@@ -156,41 +140,11 @@ position = Vector2( 256, 456 )
 [node name="Tile61" parent="Tiles" instance=ExtResource( 8 )]
 position = Vector2( 288, 456 )
 
-[node name="Tile62" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 320, 456 )
-
-[node name="Tile132" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 352, 456 )
-
-[node name="Tile07" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 448, 456 )
-
-[node name="Tile08" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 480, 456 )
-
-[node name="Tile09" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 512, 456 )
-
-[node name="Tile10" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 544, 456 )
-
 [node name="Tile11" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 576, 456 )
-
-[node name="Tile14" parent="Tiles" instance=ExtResource( 8 )]
-position = Vector2( 608, 456 )
+position = Vector2( 712, 520 )
 
 [node name="Tile04" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 288, -112 )
-
-[node name="Tile156" parent="Tiles" instance=ExtResource( 6 )]
-position = Vector2( 640, 136 )
-
-[node name="Tile16" parent="Tiles" instance=ExtResource( 12 )]
-position = Vector2( 672, 136 )
-
-[node name="Tile12" parent="Tiles" instance=ExtResource( 12 )]
-position = Vector2( 416, -104 )
 
 [node name="Tile13" parent="Tiles" instance=ExtResource( 18 )]
 position = Vector2( 288, -80 )
@@ -210,17 +164,8 @@ position = Vector2( 288, 136 )
 [node name="Tile58" parent="Tiles" instance=ExtResource( 18 )]
 position = Vector2( 288, 168 )
 
-[node name="Tile21" parent="Tiles" instance=ExtResource( 6 )]
-position = Vector2( 384, -104 )
-
-[node name="Tile22" parent="Tiles" instance=ExtResource( 6 )]
-position = Vector2( 0, -96 )
-
 [node name="Tile24" parent="Tiles" instance=ExtResource( 14 )]
 position = Vector2( 0, 72 )
-
-[node name="Tile107" parent="Tiles" instance=ExtResource( 14 )]
-position = Vector2( 0, -64 )
 
 [node name="Tile25" parent="Tiles" instance=ExtResource( 17 )]
 position = Vector2( 32, 72 )
@@ -249,29 +194,11 @@ position = Vector2( 416, 488 )
 [node name="Tile32" parent="Tiles" instance=ExtResource( 17 )]
 position = Vector2( 480, 488 )
 
-[node name="Tile33" parent="Tiles" instance=ExtResource( 17 )]
-position = Vector2( 512, 488 )
-
-[node name="Tile34" parent="Tiles" instance=ExtResource( 17 )]
-position = Vector2( 544, 488 )
-
 [node name="Tile40" parent="Tiles" instance=ExtResource( 17 )]
-position = Vector2( 576, 488 )
-
-[node name="Tile41" parent="Tiles" instance=ExtResource( 17 )]
-position = Vector2( 608, 488 )
-
-[node name="Tile98" parent="Tiles" instance=ExtResource( 17 )]
-position = Vector2( 640, 488 )
+position = Vector2( 512, 488 )
 
 [node name="Tile106" parent="Tiles" instance=ExtResource( 9 )]
 position = Vector2( 288, 392 )
-
-[node name="Tile108" parent="Tiles" instance=ExtResource( 9 )]
-position = Vector2( 32, -64 )
-
-[node name="Tile45" parent="Tiles" instance=ExtResource( 9 )]
-position = Vector2( 672, 488 )
 
 [node name="Tile37" parent="Tiles" instance=ExtResource( 17 )]
 position = Vector2( 256, 488 )
@@ -366,170 +293,8 @@ position = Vector2( 256, 360 )
 [node name="Tile92" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 128, 424 )
 
-[node name="Tile67" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 168 )
-
-[node name="Tile68" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 200 )
-
-[node name="Tile69" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 232 )
-
-[node name="Tile70" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 264 )
-
-[node name="Tile71" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 296 )
-
-[node name="Tile74" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 168 )
-
-[node name="Tile75" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 200 )
-
-[node name="Tile76" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 232 )
-
-[node name="Tile77" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 264 )
-
-[node name="Tile78" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 296 )
-
-[node name="Tile93" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 328 )
-
-[node name="Tile94" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 360 )
-
-[node name="Tile95" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 392 )
-
-[node name="Tile96" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 424 )
-
-[node name="Tile97" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 672, 456 )
-
-[node name="Tile99" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 328 )
-
-[node name="Tile100" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 360 )
-
-[node name="Tile101" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 392 )
-
-[node name="Tile102" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 640, 424 )
-
-[node name="Tile135" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, -80 )
-
-[node name="Tile136" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, -48 )
-
-[node name="Tile137" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, -80 )
-
-[node name="Tile138" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, -48 )
-
-[node name="Tile139" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, -16 )
-
-[node name="Tile140" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 16 )
-
-[node name="Tile141" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 48 )
-
-[node name="Tile142" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 336 )
-
-[node name="Tile143" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 368 )
-
-[node name="Tile144" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 400 )
-
-[node name="Tile145" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, -16 )
-
-[node name="Tile146" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 16 )
-
-[node name="Tile147" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 48 )
-
-[node name="Tile157" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 208 )
-
-[node name="Tile158" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 208 )
-
-[node name="Tile159" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 240 )
-
-[node name="Tile160" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 272 )
-
-[node name="Tile161" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 304 )
-
-[node name="Tile162" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 240 )
-
-[node name="Tile163" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 272 )
-
-[node name="Tile164" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 304 )
-
-[node name="Tile165" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 80 )
-
-[node name="Tile166" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 80 )
-
-[node name="Tile167" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 112 )
-
-[node name="Tile168" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 144 )
-
-[node name="Tile169" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 176 )
-
-[node name="Tile170" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 112 )
-
-[node name="Tile171" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 144 )
-
-[node name="Tile172" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 176 )
-
-[node name="Tile148" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 336 )
-
-[node name="Tile149" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 368 )
-
-[node name="Tile150" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 400 )
-
-[node name="Tile151" parent="Tiles" instance=ExtResource( 18 )]
-position = Vector2( 416, 424 )
-
-[node name="Tile152" parent="Tiles" instance=ExtResource( 16 )]
-position = Vector2( 384, 424 )
-
 [node name="Tile39" parent="Tiles" instance=ExtResource( 16 )]
 position = Vector2( 128, 456 )
-
-[node name="Tile47" parent="Tiles" instance=ExtResource( 12 )]
-position = Vector2( 32, -96 )
 
 [node name="Tile109" parent="Tiles" instance=ExtResource( 12 )]
 position = Vector2( 160, 40 )
@@ -611,19 +376,6 @@ position = Vector2( 160, 456 )
 texture = ExtResource( 15 )
 flip_h = true
 
-[node name="curved5" type="Sprite" parent="Tiles"]
-position = Vector2( 416, 456 )
-texture = ExtResource( 15 )
-flip_h = true
-
-[node name="curved7" type="Sprite" parent="Tiles"]
-position = Vector2( 384, 456 )
-texture = ExtResource( 15 )
-
-[node name="curved8" type="Sprite" parent="Tiles"]
-position = Vector2( 640, 456 )
-texture = ExtResource( 15 )
-
 [node name="Area2D" parent="Tiles" instance=ExtResource( 3 )]
 position = Vector2( 192, 40 )
 
@@ -696,6 +448,12 @@ position = Vector2( 320, 424 )
 [node name="Area2D46" parent="Tiles" instance=ExtResource( 3 )]
 position = Vector2( 352, 424 )
 
+[node name="Area2D47" parent="Tiles" instance=ExtResource( 3 )]
+position = Vector2( 384, 424 )
+
+[node name="Area2D48" parent="Tiles" instance=ExtResource( 3 )]
+position = Vector2( 416, 424 )
+
 [node name="Area2D35" parent="Tiles" instance=ExtResource( 3 )]
 position = Vector2( 192, 360 )
 
@@ -714,110 +472,47 @@ position = Vector2( 192, 328 )
 [node name="Area2D40" parent="Tiles" instance=ExtResource( 3 )]
 position = Vector2( 224, 328 )
 
-[node name="Area2D17" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 168 )
-
-[node name="Area2D18" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 168 )
-
-[node name="Area2D19" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 200 )
-
-[node name="Area2D20" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 200 )
-
-[node name="Area2D21" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 232 )
-
-[node name="Area2D22" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 232 )
-
-[node name="Area2D23" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 264 )
-
-[node name="Area2D24" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 264 )
-
-[node name="Area2D47" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 40 )
-
-[node name="Area2D48" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 40 )
-
 [node name="Area2D49" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 72 )
+position = Vector2( 448, 424 )
 
 [node name="Area2D50" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 72 )
-
-[node name="Area2D51" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 104 )
-
-[node name="Area2D52" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 104 )
+position = Vector2( 480, 424 )
 
 [node name="Area2D53" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 136 )
+position = Vector2( 512, 424 )
 
-[node name="Area2D54" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 136 )
+[node name="Area2D17" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 328, 448 )
 
-[node name="Area2D55" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, -88 )
+[node name="Area2D18" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 376, 448 )
 
-[node name="Area2D56" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, -88 )
+[node name="Area2D19" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 424, 448 )
 
-[node name="Area2D57" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, -56 )
+[node name="Area2D20" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 472, 448 )
 
-[node name="Area2D58" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, -56 )
+[node name="Area2D21" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 328, 400 )
+rotation = 3.14159
 
-[node name="Area2D59" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, -24 )
+[node name="Area2D22" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 376, 400 )
+rotation = 3.14159
 
-[node name="Area2D60" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, -24 )
+[node name="Area2D23" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 424, 400 )
+rotation = 3.14159
 
-[node name="Area2D61" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 8 )
-
-[node name="Area2D62" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 8 )
-
-[node name="Area2D25" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 296 )
-
-[node name="Area2D26" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 296 )
-
-[node name="Area2D27" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 328 )
-
-[node name="Area2D28" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 328 )
-
-[node name="Area2D29" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 360 )
-
-[node name="Area2D30" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 360 )
-
-[node name="Area2D31" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 320, 392 )
-
-[node name="Area2D32" parent="Tiles" instance=ExtResource( 3 )]
-position = Vector2( 352, 392 )
+[node name="Area2D24" parent="Tiles" instance=ExtResource( 19 )]
+position = Vector2( 472, 400 )
+rotation = 3.14159
 
 [node name="Checkpoints" type="Node" parent="."]
 
 [node name="CP0" parent="Checkpoints" instance=ExtResource( 7 )]
 position = Vector2( 0, 16 )
-
-[node name="Goal" parent="Checkpoints" instance=ExtResource( 11 )]
-position = Vector2( 8, -120 )
-z_index = -1
 
 [node name="Messages" type="Node" parent="."]
 
@@ -851,20 +546,73 @@ texture = ExtResource( 13 )
 position = Vector2( 280, 424 )
 texture = ExtResource( 10 )
 
-[node name="seaweed3" type="Sprite" parent="Sprites"]
-position = Vector2( 640, 104 )
-texture = ExtResource( 10 )
+[node name="coral2" type="Sprite" parent="Sprites"]
+position = Vector2( 464, 424 )
+z_index = -1
+texture = ExtResource( 13 )
 
-[node name="seaweed4" type="Sprite" parent="Sprites"]
-position = Vector2( 656, 104 )
-texture = ExtResource( 10 )
+[node name="water4" type="Sprite" parent="Sprites"]
+position = Vector2( 320, 392 )
+texture = ExtResource( 4 )
 
-[node name="seaweed5" type="Sprite" parent="Sprites"]
-position = Vector2( 672, 104 )
-texture = ExtResource( 10 )
+[node name="water5" type="Sprite" parent="Sprites"]
+position = Vector2( 352, 392 )
+texture = ExtResource( 4 )
 
-[node name="tree" type="Sprite" parent="Sprites"]
-position = Vector2( 656, 72 )
-texture = ExtResource( 2 )
+[node name="water6" type="Sprite" parent="Sprites"]
+position = Vector2( 384, 392 )
+texture = ExtResource( 4 )
 
-[node name="ParallaxBackground" parent="." instance=ExtResource( 19 )]
+[node name="water7" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 392 )
+texture = ExtResource( 4 )
+
+[node name="water8" type="Sprite" parent="Sprites"]
+position = Vector2( 448, 392 )
+texture = ExtResource( 4 )
+
+[node name="water9" type="Sprite" parent="Sprites"]
+position = Vector2( 480, 392 )
+texture = ExtResource( 4 )
+
+[node name="water10" type="Sprite" parent="Sprites"]
+position = Vector2( 320, 456 )
+texture = ExtResource( 4 )
+
+[node name="water11" type="Sprite" parent="Sprites"]
+position = Vector2( 352, 456 )
+texture = ExtResource( 4 )
+
+[node name="water12" type="Sprite" parent="Sprites"]
+position = Vector2( 384, 456 )
+texture = ExtResource( 4 )
+
+[node name="water13" type="Sprite" parent="Sprites"]
+position = Vector2( 416, 456 )
+texture = ExtResource( 4 )
+
+[node name="water14" type="Sprite" parent="Sprites"]
+position = Vector2( 448, 456 )
+texture = ExtResource( 4 )
+
+[node name="water15" type="Sprite" parent="Sprites"]
+position = Vector2( 480, 456 )
+texture = ExtResource( 4 )
+
+[node name="Tile11" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 320, 360 )
+
+[node name="Tile12" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 352, 360 )
+
+[node name="Tile13" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 384, 360 )
+
+[node name="Tile14" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 416, 360 )
+
+[node name="Tile15" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 448, 360 )
+
+[node name="Tile16" parent="Sprites" instance=ExtResource( 2 )]
+position = Vector2( 480, 360 )

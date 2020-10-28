@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tiles/Tile22.tscn" type="PackedScene" id=2]
@@ -20,6 +20,8 @@
 [ext_resource path="res://sprite/tilemap/curved1.png" type="Texture" id=18]
 [ext_resource path="res://Tiles/Tile11.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Tiles/Tile10.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Background/SkyBackground.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Tiles/Tile12.tscn" type="PackedScene" id=22]
 
 [node name="MainScene" type="Node2D"]
 position = Vector2( -224, 32 )
@@ -40,9 +42,6 @@ position = Vector2( -264, 16 )
 
 [node name="StaticBody2D8" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( -264, -32 )
-
-[node name="StaticBody2D9" parent="Tiles" instance=ExtResource( 5 )]
-position = Vector2( -264, -80 )
 
 [node name="StaticBody2D10" parent="Tiles" instance=ExtResource( 5 )]
 position = Vector2( -264, 64 )
@@ -484,9 +483,221 @@ position = Vector2( 944, 56 )
 position = Vector2( 1104, 56 )
 
 [node name="logo" type="Sprite" parent="."]
-position = Vector2( -200, -128 )
+position = Vector2( -176, -184 )
 z_index = -1
 texture = ExtResource( 4 )
+
+[node name="Tile11" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -112, -48 )
+z_index = -1
+
+[node name="Tile12" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -80, -48 )
+z_index = -1
+
+[node name="Tile13" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -48, -48 )
+z_index = -1
+
+[node name="Tile14" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -16, -48 )
+z_index = -1
+
+[node name="Tile15" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 16, -48 )
+z_index = -1
+
+[node name="Tile16" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 48, -48 )
+z_index = -1
+
+[node name="Tile17" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 80, -48 )
+z_index = -1
+
+[node name="Tile18" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 112, -48 )
+z_index = -1
+
+[node name="Tile19" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -112, -16 )
+z_index = -1
+
+[node name="Tile20" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -80, -16 )
+z_index = -1
+
+[node name="Tile21" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -48, -16 )
+z_index = -1
+
+[node name="Tile22" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -16, -16 )
+z_index = -1
+
+[node name="Tile23" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 16, -16 )
+z_index = -1
+
+[node name="Tile24" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 48, -16 )
+z_index = -1
+
+[node name="Tile25" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 80, -16 )
+z_index = -1
+
+[node name="Tile26" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 112, -16 )
+z_index = -1
+
+[node name="Tile27" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -112, 16 )
+z_index = -1
+
+[node name="Tile28" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -80, 16 )
+z_index = -1
+
+[node name="Tile29" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -48, 16 )
+z_index = -1
+
+[node name="Tile30" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -16, 16 )
+z_index = -1
+
+[node name="Tile31" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 16, 16 )
+z_index = -1
+
+[node name="Tile32" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 48, 16 )
+z_index = -1
+
+[node name="Tile33" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 80, 16 )
+z_index = -1
+
+[node name="Tile34" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 112, 16 )
+z_index = -1
+
+[node name="Tile35" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 16, 48 )
+z_index = -1
+
+[node name="Tile36" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 48, 48 )
+z_index = -1
+
+[node name="Tile37" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 80, 48 )
+z_index = -1
+
+[node name="Tile38" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( 112, 48 )
+z_index = -1
+
+[node name="Tile39" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -112, 48 )
+z_index = -1
+
+[node name="Tile43" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( -112, 80 )
+
+[node name="Tile44" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( -80, 80 )
+
+[node name="Tile45" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( -48, 80 )
+
+[node name="Tile46" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( -16, 80 )
+
+[node name="Tile47" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( 16, 80 )
+
+[node name="Tile10" parent="logo" instance=ExtResource( 20 )]
+position = Vector2( -144, -48 )
+
+[node name="Tile48" parent="logo" instance=ExtResource( 20 )]
+position = Vector2( -144, -16 )
+
+[node name="Tile49" parent="logo" instance=ExtResource( 20 )]
+position = Vector2( -144, 16 )
+
+[node name="Tile50" parent="logo" instance=ExtResource( 22 )]
+position = Vector2( 144, 48 )
+
+[node name="Tile51" parent="logo" instance=ExtResource( 22 )]
+position = Vector2( 144, 16 )
+
+[node name="Tile52" parent="logo" instance=ExtResource( 22 )]
+position = Vector2( 144, -16 )
+
+[node name="Tile53" parent="logo" instance=ExtResource( 22 )]
+position = Vector2( 144, -48 )
+
+[node name="Tile54" parent="logo" instance=ExtResource( 20 )]
+position = Vector2( -144, 48 )
+
+[node name="Tile55" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( 48, 80 )
+
+[node name="Tile56" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( 80, 80 )
+
+[node name="Tile57" parent="logo" instance=ExtResource( 13 )]
+position = Vector2( 112, 80 )
+
+[node name="Tile00" parent="logo" instance=ExtResource( 15 )]
+position = Vector2( -144, -80 )
+
+[node name="Tile58" parent="logo" instance=ExtResource( 2 )]
+position = Vector2( 144, 80 )
+
+[node name="Tile59" parent="logo" instance=ExtResource( 14 )]
+position = Vector2( -144, 80 )
+
+[node name="Tile02" parent="logo" instance=ExtResource( 17 )]
+position = Vector2( 144, -80 )
+
+[node name="Tile01" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( -112, -80 )
+
+[node name="Tile03" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( -80, -80 )
+
+[node name="Tile04" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( -48, -80 )
+
+[node name="Tile05" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( -16, -80 )
+
+[node name="Tile06" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( 16, -80 )
+
+[node name="Tile07" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( 48, -80 )
+
+[node name="Tile08" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( 80, -80 )
+
+[node name="Tile09" parent="logo" instance=ExtResource( 16 )]
+position = Vector2( 112, -80 )
+
+[node name="Tile40" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -80, 48 )
+z_index = -1
+
+[node name="Tile41" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -48, 48 )
+z_index = -1
+
+[node name="Tile42" parent="logo" instance=ExtResource( 19 )]
+position = Vector2( -16, 48 )
+z_index = -1
 
 [node name="Checkpoints" type="Node" parent="."]
 
@@ -535,3 +746,5 @@ position = Vector2( 576, 0 )
 
 [node name="CP0" parent="." instance=ExtResource( 7 )]
 position = Vector2( 0, 16 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 21 )]

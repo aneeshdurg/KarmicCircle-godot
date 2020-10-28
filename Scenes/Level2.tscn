@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprite/misc/coral1.png" type="Texture" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://sprite/misc/seaweed2.png" type="Texture" id=20]
 [ext_resource path="res://sprite/misc/seaweed1.png" type="Texture" id=21]
 [ext_resource path="res://sprite/misc/tree.png" type="Texture" id=22]
+[ext_resource path="res://Background/SkyBackground.tscn" type="PackedScene" id=23]
 
 [node name="Level2" type="Node2D"]
 
@@ -446,3 +447,5 @@ texture = ExtResource( 20 )
 position = Vector2( 336, -120 )
 z_index = -2
 texture = ExtResource( 22 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 23 )]

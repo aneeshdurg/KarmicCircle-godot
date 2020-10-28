@@ -173,7 +173,6 @@ func _physics_process (delta):
 			sprite.play("fall")
 			
 	elif curr_props.animal == Animals.Bird:
-		print(vel.y, " ", check_ground)
 		if not is_on_floor():
 			sprite.play("fly")
 	
